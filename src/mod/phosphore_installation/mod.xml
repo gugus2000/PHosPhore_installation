@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<mod>
+	<name>PHosPhore_installation</name>
+	<authors>
+		<author>
+			<name>gugus2000</name>
+			<contact>gugus2000[at]protonmail.com</contact>
+			<work>Intial work</work>
+		</author>
+	</authors>
+	<description>
+		An installation module for the PHosPhore PHP framework
+	</description>
+	<version>1.0</version>
+	<structure>
+		<folder name="asset">
+			<folder name="sql">
+				<folder name="mod">
+					<folder name="phosphore_installation">
+						<file name="table_creation.sql"></file>
+					</folder>
+				</folder>
+			</folder>
+			<folder name="template">
+				<folder name="mod">
+					<folder name="phosphore_installation">
+						<file name="configuration.html"></file>
+						<file name="secret.html"></file>
+						<folder name="config">
+							<file name="config_database"></file>
+							<file name="config_database_driver"></file>
+							<file name="config_database_drivers"></file>
+							<file name="config_database_drivers_charset"></file>
+							<file name="config_database_drivers_dbname"></file>
+							<file name="config_database_drivers_dialect"></file>
+							<file name="config_database_drivers_host"></file>
+							<file name="config_database_drivers_memory"></file>
+							<file name="config_database_drivers_password"></file>
+							<file name="config_database_drivers_path"></file>
+							<file name="config_database_drivers_port"></file>
+							<file name="config_database_drivers_role"></file>
+							<file name="config_database_drivers_unix_socket"></file>
+							<file name="config_database_drivers_username"></file>
+							<file name="config_lang"></file>
+							<file name="config_locale"></file>
+						</folder>
+					</folder>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="config">
+			<folder name="mod">
+				<folder name="phosphore_installation">
+					<file name="config.php"></file>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="hook">
+			<folder name="core">
+				<folder name="index">
+					<folder name="start_after_logger">
+						<file name="phosphore_installation.php"></file>
+					</folder>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="lang">
+			<folder name="mod">
+				<folder name="phosphore_installation">
+					<file name="en.lang.php"></file>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="locale">
+			<folder name="mod">
+				<folder name="phosphore_installation">
+					<file name="en.locale.php"></file>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="mod">
+			<folder name="phosphore_installation">
+				<file name="mod.xml"></file>
+				<file name="README.md"></file>
+			</folder>
+		</folder>
+	</structure>
+</mod>
