@@ -440,6 +440,11 @@ try
 										'id_parent' => $MainFolder->get('id'),
 									]);
 									$HomeFolder->add();
+									$RootRoute = new \route\Route([
+										'id'   => 0,
+										'name' => 'root',
+										'type' => \route\Route::TYPES['folder'],
+									]);
 									$ErrorRoute = new \route\Route([
 										'name' => 'error',
 										'type' => \route\Route::TYPES['page'],
@@ -461,14 +466,22 @@ try
 										'id_route_parent' => 2,
 										'id_route_child'  => 3,
 									]);
-									$MainParameter = new \user\Parameter([
+									$LinkRouteRoute->add([
+										'id_route_parent' => 0,
+										'id_route_child'  => 1,
+									]);
+									$LinkRouteRoute->add([
+										'id_route_parent' => 0,
+										'id_route_child'  => 2,
+									]);
+									$RootParameter = new \user\Parameter([
 										'key'   => 'preset',
 										'value' => 'default_html',
 									]);
-									$MainParameter->add();
+									$RootParameter->add();
 									$LinkPageParameter = new \user\LinkPageParameter();
 									$LinkPageParameter->add([
-										'id_page'      => 3,
+										'id_page'      => 0,
 										'id_parameter' => 1,
 									]);
 
