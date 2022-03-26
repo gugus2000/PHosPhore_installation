@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <mod>
-  <name>
-    PHosPhore_installation
-  </name>
-  <authors>
-    <author>
-      <name>
-        gugus2000
-      </name>
-      <contacts>
-        <contact type="email">
-          gugus2000@courrier.dev
-        </contact>
-        <contact type="twitter">
-          @gugus2000
-        </contact>
-		<contact type="mastodon">
-			gugus2000@framapiaf.org
-		</contact>
-      </contacts>
-      <work>
-        Initial work
-      </work>
-    </author>
-  </authors>
-  <description>
-	Eases PHosPhore's installation by populating database
-	and generating a first configuration file.
-  </description>
-  <version>
-    1.0
-  </version>
-  <license>
-    Chocolate-Ware License
-  </license>
-  <structure>
-    <folder name="src">
-      <folder name="asset">
-	    <folder name="sql">
-		  <folder name="mod">
-			<folder name="phosphore_installation">
-			  <file name="table_creation.sql" />
+	<name>
+		PHosPhore_installation
+	</name>
+	<authors>
+		<author>
+			<name>
+				gugus2000
+			</name>
+			<contacts>
+				<contact type="email">
+					gugus2000@courrier.dev
+				</contact>
+				<contact type="twitter">
+					@gugus2000
+				</contact>
+				<contact type="mastodon">
+					gugus2000@framapiaf.org
+				</contact>
+			</contacts>
+			<work>
+				Initial work
+			</work>
+		</author>
+	</authors>
+	<description>
+		Eases PHosPhore's installation by populating database
+		and generating a first configuration file.
+	</description>
+	<version>
+		1.0
+	</version>
+	<license>
+		Chocolate-Ware License
+	</license>
+	<structure>
+		<folder name="src">
+			<folder name="asset">
+				<folder name="sql">
+					<folder name="mod">
+						<folder name="phosphore_installation">
+							<file name="table_creation.sql" />
+						</folder>
+					</folder>
+				</folder>
+				<folder name="template">
+					<folder name="mod">
+						<folder name="phosphore_installation">
+							<folder name="config">
+								<file name="config_database" />
+								<file name="config_database_driver" />
+								<file name="config_database_drivers" />
+								<file name="config_database_drivers_charset" />
+								<file name="config_database_drivers_dbname" />
+								<file name="config_database_drivers_dialect" />
+								<file name="config_database_drivers_host" />
+								<file name="config_database_drivers_memory" />
+								<file name="config_database_drivers_password" />
+								<file name="config_database_drivers_path" />
+								<file name="config_database_drivers_port" />
+								<file name="config_database_drivers_role" />
+								<file name="config_database_drivers_unix_socket" />
+								<file name="config_database_drivers_username" />
+								<file name="config_lang" />
+								<file name="config_locale" />
+							</folder>
+							<file name="configuration.html" />
+							<file name="secret.html" />
+						</folder>
+					</folder>
+				</folder>
 			</folder>
-		  </folder>
-		</folder>
-		<folder name="template">
-		  <folder name="mod">
-		    <folder name="phosphore_installation">
-			  <folder name="config">
-			    <file name="config_database" />
-				<file name="config_database_driver" />
-				<file name="config_database_drivers" />
-				<file name="config_database_drivers_charset" />
-				<file name="config_database_drivers_dbname" />
-				<file name="config_database_drivers_dialect" />
-				<file name="config_database_drivers_host" />
-				<file name="config_database_drivers_memory" />
-				<file name="config_database_drivers_password" />
-				<file name="config_database_drivers_path" />
-				<file name="config_database_drivers_port" />
-				<file name="config_database_drivers_role" />
-				<file name="config_database_drivers_unix_socket" />
-				<file name="config_database_drivers_username" />
-				<file name="config_lang" />
-				<file name="config_locale" />
-			  </folder>
-			  <file name="configuration.html" />
-			  <file name="secret.html" />
+			<folder name="config">
+				<folder name="mod">
+					<folder name="phosphore_installation">
+						<file name="config.php" />
+					</folder>
+				</folder>
 			</folder>
-		  </folder>
-		</folder>
-      </folder>
-	  <folder name="config">
-	    <folder name="mod">
-	      <folder name="phosphore_installation">
-		    <file name="config.php" />
-		  </folder>
-		</folder>
-	  </folder>
-	  <folder name="hook">
-	    <folder name="core">
-		  <folder name="index">
-		    <folder name="start_after_logger">
-			  <file name="phosphore_installation.php" />
+			<folder name="hook">
+				<folder name="core">
+					<folder name="index">
+						<folder name="start_after_logger">
+							<file name="phosphore_installation.php" />
+						</folder>
+					</folder>
+				</folder>
 			</folder>
-		  </folder>
+			<folder name="lang">
+				<folder name="mod">
+					<folder name="phosphore_installation">
+						<file name="en.lang.php" />
+					</folder>
+				</folder>
+			</folder>
+			<folder name="locale">
+				<folder name="mod">
+					<folder name="phosphore_installation">
+						<file name="en.locale.php" />
+					</folder>
+				</folder>
+			</folder>
+			<folder name="mod">
+				<folder name="phosphore_installation">
+					<file name="README.md" />
+					<file name="mod.xml" />
+				</folder>
+			</folder>
 		</folder>
-	  </folder>
-	  <folder name="lang">
-	    <folder name="mod">
-		  <folder name="phosphore_installation">
-		    <file name="en.lang.php" />
-		  </folder>
-		</folder>
-	  </folder>
-	  <folder name="locale">
-	    <folder name="mod">
-		  <folder name="phosphore_installation">
-		    <file name="en.locale.php" />
-		  </folder>
-		</folder>
-	  </folder>
-	  <folder name="mod">
-	    <folder name="phosphore_installation">
-			<file name="README.md" />
-			<file name="mod.xml" />
-		</folder>
-	  </folder>
-    </folder>
-	<file name="LICENSE" />
-	<file name="README.md" />
-  </structure>
+		<file name="LICENSE" />
+		<file name="README.md" />
+	</structure>
 </mod>
