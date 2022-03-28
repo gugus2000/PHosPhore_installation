@@ -22,6 +22,10 @@ $GLOBALS['config']['mod']['phosphore_installation']['path']['config_template'] =
 $GLOBALS['config']['mod']['phosphore_installation']['path']['config_files'] = $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR;
 /** [/path] **/
 
+/* default user string */
+$GLOBALS['config']['mod']['phosphore_installation']['database_user_default'] = 'phosphore_user';
+/* number of bytes used to generate a random string after the default one */
+$GLOBALS['config']['mod']['phosphore_installation']['database_user_appendname_length'] = 8;
 /* number of bytes used to generate a random password for phosphore database user */
 $GLOBALS['config']['mod']['phosphore_installation']['database_user_password_length'] = 16;
 

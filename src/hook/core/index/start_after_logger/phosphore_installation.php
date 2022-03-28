@@ -250,7 +250,7 @@ try
 							$drivers = [];
 
 							/** generating username and password for created user **/
-							$username = 'phosphore_user';
+							$username = $GLOBALS['config']['mod']['phosphore_installation']['database_user_default'] . \bin2hex(\random_bytes($GLOBALS['config']['mod']['phosphore_installation']['database_user_appendname_length']));
 							$password = \bin2hex(\random_bytes($GLOBALS['config']['mod']['phosphore_installation']['database_user_password_length']));
 
 							$drivers[] = new \content\pageelement\PageElement([
