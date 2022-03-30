@@ -39,14 +39,14 @@
 			<folder name="asset">
 				<folder name="sql">
 					<folder name="mod">
-						<folder name="phosphore_installation">
+						<folder name="PHosPhore_installation">
 							<file name="table_creation.sql" />
 						</folder>
 					</folder>
 				</folder>
 				<folder name="template">
 					<folder name="mod">
-						<folder name="phosphore_installation">
+						<folder name="PHosPhore_installation">
 							<folder name="config">
 								<file name="config_database" />
 								<file name="config_database_driver" />
@@ -73,7 +73,7 @@
 			</folder>
 			<folder name="config">
 				<folder name="mod">
-					<folder name="phosphore_installation">
+					<folder name="PHosPhore_installation">
 						<file name="config.php" />
 					</folder>
 				</folder>
@@ -82,27 +82,27 @@
 				<folder name="core">
 					<folder name="index">
 						<folder name="start_after_logger">
-							<file name="phosphore_installation.php" />
+							<file name="PHosPhore_installation.php" />
 						</folder>
 					</folder>
 				</folder>
 			</folder>
 			<folder name="lang">
 				<folder name="mod">
-					<folder name="phosphore_installation">
+					<folder name="PHosPhore_installation">
 						<file name="en.lang.php" />
 					</folder>
 				</folder>
 			</folder>
 			<folder name="locale">
 				<folder name="mod">
-					<folder name="phosphore_installation">
+					<folder name="PHosPhore_installation">
 						<file name="en.locale.php" />
 					</folder>
 				</folder>
 			</folder>
 			<folder name="mod">
-				<folder name="phosphore_installation">
+				<folder name="PHosPhore_installation">
 					<file name="README.md" />
 					<file name="mod.xml" />
 				</folder>
