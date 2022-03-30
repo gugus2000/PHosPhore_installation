@@ -441,7 +441,6 @@ try
 									]);
 									$HomeFolder->add();
 									$RootRoute = new \route\Route([
-										'id'   => 0,
 										'name' => 'root',
 										'type' => \route\Route::TYPES['folder'],
 									]);
@@ -463,16 +462,16 @@ try
 
 									$LinkRouteRoute = new \route\LinkRouteRoute();
 									$LinkRouteRoute->add([
-										'id_route_parent' => 2,
-										'id_route_child'  => 3,
+										'id_route_parent' => $RootRoute->get('id'),
+										'id_route_child'  => $ErrorRoute->get('id'),
 									]);
 									$LinkRouteRoute->add([
-										'id_route_parent' => 0,
-										'id_route_child'  => 1,
+										'id_route_parent' => $RootRoute->get('id'),
+										'id_route_child'  => $MainRoute->get('id'),
 									]);
 									$LinkRouteRoute->add([
-										'id_route_parent' => 0,
-										'id_route_child'  => 2,
+										'id_route_parent' => $MainRoute->get('id'),
+										'id_route_child'  => $HomeRoute->get('id'),
 									]);
 									$RootParameter = new \user\Parameter([
 										'key'   => 'preset',
@@ -481,8 +480,8 @@ try
 									$RootParameter->add();
 									$LinkPageParameter = new \user\LinkPageParameter();
 									$LinkPageParameter->add([
-										'id_page'      => 0,
-										'id_parameter' => 1,
+										'id_page'      => $RootRoute->get('id'),
+										'id_parameter' => $RootParameter->get('id'),
 									]);
 
 									$Password = new \user\Password([
@@ -491,11 +490,11 @@ try
 									$Password->hash();
 									$Permissions = [];
 									$Permissions[] = new \user\Permission([
-										'id_route'  => 1,
+										'id_route'  => $ErrorRoute->get('id'),
 										'name_role' => 'all',
 									]);
 									$Permissions[] = new \user\Permission([
-										'id_route'  => 3,
+										'id_route'  => $HomeRoute->get('id'),
 										'name_role' => 'all',
 									]);
 									foreach ($Permissions as $Permission)
