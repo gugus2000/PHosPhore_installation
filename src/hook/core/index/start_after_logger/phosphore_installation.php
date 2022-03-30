@@ -427,6 +427,9 @@ try
 									$request->execute([]);
 
 									/** insert necessary elements **/
+									$RootFolder = new \route\Folder([
+										'name' => '',
+									]);
 									$ErrorFolder = new \route\Folder([
 										'name'      => 'error',
 									]);
@@ -444,6 +447,7 @@ try
 										'name' => 'root',
 										'type' => \route\Route::TYPES['folder'],
 									]);
+									$RootRoute->add();
 									$ErrorRoute = new \route\Route([
 										'name' => 'error',
 										'type' => \route\Route::TYPES['page'],
