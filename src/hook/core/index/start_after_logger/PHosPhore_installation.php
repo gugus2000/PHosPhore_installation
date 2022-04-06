@@ -417,7 +417,7 @@ try
 									/** create table **/
 									if (\in_array($config_dbfactory['driver'], ['MYSQL', 'POSTGRESQL']))
 									{
-										$request_content = \file_get_contents($GLOBALS['config']['core']['path']['asset'] . 'sql' . DIRECTORY_SEPARATOR . 'mod' . DIRECTORY_SEPARATOR . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'table_creation.sql');
+										$request_content = \file_get_contents($GLOBALS['config']['core']['path']['asset'] . 'sql' . DIRECTORY_SEPARATOR . 'mod' . DIRECTORY_SEPARATOR . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'table_creation.sql');
 
 										$request = $pdo_user->prepare($request_content);
 										$request->execute([]);
