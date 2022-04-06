@@ -428,7 +428,7 @@ try
 
 									/** insert necessary elements **/
 									$RootFolder = new \route\Folder([
-										'name' => '',
+										'name' => ' ',
 									]);
 									$ErrorFolder = new \route\Folder([
 										'name'      => 'error',
