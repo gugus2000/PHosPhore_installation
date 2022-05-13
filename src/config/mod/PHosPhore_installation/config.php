@@ -9,17 +9,17 @@ $GLOBALS['config']['mod']['phosphore_installation']['default']['locale'] = 'en';
 
 /** [path] **/
 /* stage file */
-$GLOBALS['config']['mod']['phosphore_installation']['path']['stage'] = $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'stage';
+$GLOBALS['config']['mod']['phosphore_installation']['path']['stage'] = $GLOBALS['config']['core']['path']['mod'] . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'stage';
 /* installed file */
-$GLOBALS['config']['mod']['phosphore_installation']['path']['installed_file'] = $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'installed';
+$GLOBALS['config']['mod']['phosphore_installation']['path']['installed_file'] = $GLOBALS['config']['core']['path']['mod'] . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'installed';
 /* secret file */
-$GLOBALS['config']['mod']['phosphore_installation']['path']['secret_file'] = $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'secret';
+$GLOBALS['config']['mod']['phosphore_installation']['path']['secret_file'] = $GLOBALS['config']['core']['path']['mod'] . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'secret';
 /* secret login template file */
-$GLOBALS['config']['mod']['phosphore_installation']['path']['secret_template'] = $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'secret.html';
+$GLOBALS['config']['mod']['phosphore_installation']['path']['secret_template'] = $GLOBALS['config']['core']['path']['mod'] . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'secret.html';
 /* configuration template file */
-$GLOBALS['config']['mod']['phosphore_installation']['path']['config_template'] = $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'configuration.html';
+$GLOBALS['config']['mod']['phosphore_installation']['path']['config_template'] = $GLOBALS['config']['core']['path']['mod'] . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'configuration.html';
 /* templates file for config generation */
-$GLOBALS['config']['mod']['phosphore_installation']['path']['config_files'] = $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR;
+$GLOBALS['config']['mod']['phosphore_installation']['path']['config_files'] = $GLOBALS['config']['core']['path']['mod'] . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR;
 /** [/path] **/
 
 /* default user string */

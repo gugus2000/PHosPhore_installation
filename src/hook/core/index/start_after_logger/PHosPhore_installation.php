@@ -2,7 +2,7 @@
 
 try
 {
-	$path_config = $GLOBALS['config']['core']['path']['config'] . $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'config.php';
+	$path_config = $GLOBALS['config']['core']['path']['config'] . $GLOBALS['config']['core']['path']['mod'] . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'config.php';
 
 	if (\is_file($path_config))
 	{
@@ -10,9 +10,9 @@ try
 	}
 	else
 	{
-		$GLOBALS['Logger']->log([\core\Logger::TYPES['error'], 'mod', 'phosphore_installation'], 'Error during mod initialization for phosphore_installation: missing config file');
+		$GLOBALS['Logger']->log([\core\Logger::TYPES['error'], 'mod', 'phosphore_installation'], 'Error during mod initialization for PHosPhore_installation: missing config file');
 
-		throw new \exception\PHosPhoreInstallationException('Error during mod initialization for phosphore_installation: missing config file');
+		throw new \exception\PHosPhoreInstallationException('Error during mod initialization for PHosPhore_installation: missing config file');
 	}
 
 	/**
@@ -26,7 +26,7 @@ try
 	 */
 	function phosphore_installation_path(string $type, string $value)
 	{
-		$path = $GLOBALS['config']['core']['path'][$type] . $GLOBALS['config']['core']['path']['mod'] . 'phosphore_installation' . DIRECTORY_SEPARATOR . $value . '.' . $GLOBALS['config']['core'][$type]['filename'];
+		$path = $GLOBALS['config']['core']['path'][$type] . $GLOBALS['config']['core']['path']['mod'] . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . $value . '.' . $GLOBALS['config']['core'][$type]['filename'];
 		return $path;
 	}
 
@@ -417,7 +417,7 @@ try
 									/** create table **/
 									if (\in_array($config_dbfactory['driver'], ['MYSQL', 'POSTGRESQL']))
 									{
-										$request_content = \file_get_contents($GLOBALS['config']['core']['path']['asset'] . 'sql' . DIRECTORY_SEPARATOR . 'mod' . DIRECTORY_SEPARATOR . 'phosphore_installation' . DIRECTORY_SEPARATOR . 'table_creation.sql');
+										$request_content = \file_get_contents($GLOBALS['config']['core']['path']['asset'] . 'sql' . DIRECTORY_SEPARATOR . 'mod' . DIRECTORY_SEPARATOR . 'PHosPhore_installation' . DIRECTORY_SEPARATOR . 'table_creation.sql');
 
 										$request = $pdo_user->prepare($request_content);
 										$request->execute([]);
