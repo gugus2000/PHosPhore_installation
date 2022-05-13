@@ -7,9 +7,13 @@ CREATE TABLE phosphore_content (
 );
 CREATE TABLE phosphore_route (
     id INT NOT NULL AUTO_INCREMENT,
+	id INT NOT NULL,
     name VARCHAR(255) NOT NULL,
     type BOOLEAN,
-    PRIMARY KEY (id)
+	PRIMARY KEY (id),
+	FOREIGN KEY (id_folder)
+		REFERENCES phosphore_folder (id)
+		ON UPDATE CASCADE ON DELETE RESTRICT
 );
 CREATE TABLE phosphore_folder (
 	id INT NOT NULL AUTO_INCREMENT,
