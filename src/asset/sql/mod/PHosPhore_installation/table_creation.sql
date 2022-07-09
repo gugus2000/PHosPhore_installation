@@ -5,21 +5,21 @@ CREATE TABLE phosphore_content (
     date_creation DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id_content, lang)
 );
+CREATE TABLE phosphore_folder (
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(255) NOT NULL,
+	id_parent INT DEFAULT -1,
+	PRIMARY KEY (id)
+);
 CREATE TABLE phosphore_route (
     id INT NOT NULL AUTO_INCREMENT,
-	id INT NOT NULL,
+    id_folder INT NOT NULL,
     name VARCHAR(255) NOT NULL,
     type BOOLEAN,
 	PRIMARY KEY (id),
 	FOREIGN KEY (id_folder)
 		REFERENCES phosphore_folder (id)
 		ON UPDATE CASCADE ON DELETE RESTRICT
-);
-CREATE TABLE phosphore_folder (
-	id INT NOT NULL AUTO_INCREMENT,
-	name VARCHAR(255) NOT NULL,
-	id_parent INT DEFAULT -1,
-	PRIMARY KEY (id)
 );
 CREATE TABLE phosphore_route_parameter (
     id  INT NOT NULL AUTO_INCREMENT,
