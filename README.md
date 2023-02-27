@@ -1,5 +1,7 @@
 # PHosPhore_installation
 
+***DO NOT USE IT UNTIL IT IS FIXED (this message will be removed)***
+
 An installation module for the PHosPhore PHP framework
 
 ## Getting started
